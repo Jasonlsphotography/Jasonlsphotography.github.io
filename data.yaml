@@ -1,0 +1,47 @@
+- src: img/img0.svg
+  
+
+- src: img/img1.jpg
+  # subHtml: '<pre style="color: #ff0000;"> Ho Chi Minh City, Vietnam </pre>'
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img2.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img3.jpg
+  subHtml: <pre> shanghai, China </pre>
+
+- src: img/img4.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img5.jpg
+  subHtml: <pre> shanghai, China </pre>
+
+- src: img/img6.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img7.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img8.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img9.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img10.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img11.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img12.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img13.jpg
+  subHtml: <pre> Shanghai, China </pre>
+
+- src: img/img14.jpg
+  subHtml: <pre> Ho Chi Minh City, Vietnam </pre>
+
+- src: img/img15.svg

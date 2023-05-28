@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
+</head>
+<body>
+	<div id="dynamic-gallery-demo" style="background-color: #000000"></div>
+	<script src="lightgallery.min.js"></script>
+	<script type="text/javascript">
+
+		const $dynamicGallery = document.getElementById("dynamic-gallery-demo");
+		
+
+		fetch("data.yaml")
+			.then(response => response.text())
+			.then(text => {
+	    		const yaml = jsyaml.load(text);
+	    		const dynamicGallery = window.lightGallery($dynamicGallery, {
+				  dynamic: true,
+				  plugins: [],
+				  mode: "lg-fade",
+				  // controls: false,
+				  download: false,
+				  showCloseIcon: false,
+				  showMaximizeIcon: false,
+				  counter: false,
+				  speed: 600,
+				  closable: false,
+
+				  dynamicEl: yaml
+				});
+	    		// dynamicGallery.refresh(yaml);
+	    		dynamicGallery.openGallery(0);
+  		});
+
+		dynamicGallery.outer.on("click", (e) => {
+		  const $item = dynamicGallery.outer.find(".lg-current .lg-image");
+		  if (
+		    e.target.classList.contains("lg-image") ||
+		    $item.get().contains(e.target)
+		  ) {
+		    dynamicGallery.goToNextSlide();
+		  }
+		});
+
+</script>
+</body>
+</html>
